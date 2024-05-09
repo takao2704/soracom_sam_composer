@@ -3,7 +3,11 @@
     "name": "Network Request Logger",
     "version": "1.0",
     "permissions": [
-      "webRequest", "webRequestBlocking", "storage", "<all_urls>"
+      "webRequest", 
+      "storage"
+    ],
+    "host_permissions": [
+      "*://*/*"
     ],
     "background": {
       "service_worker": "background.js"
