@@ -18,7 +18,8 @@ document.getElementById('previewButton').addEventListener('click', function() {
         if (response && response.requests) {
             response.requests.forEach(request => {
                 const urlElement = document.createElement('div');
-                urlElement.textContent = request.url;
+                // メソッドとURLのテキストを表示
+                urlElement.textContent = `${request.method} ${request.url}`;
                 urlsContainer.appendChild(urlElement);
             });
         } else {

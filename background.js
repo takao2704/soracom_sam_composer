@@ -47,7 +47,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         isRecording = true;
         recordedRequests = []; // 既存の記録をクリア
         sendResponse({status: "Recording started"});
-        return true; // 非同期レスポンスを示すためtrueを返す
+        return true;
     } else if (message.command === "stop") {
         isRecording = false;
         sendResponse({status: "Recording stopped"});
