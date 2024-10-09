@@ -10,7 +10,7 @@ To use this extension, follow the steps below:
 
 1. Clone the repository:
     ```
-    git clone https://github.com/your-username/soracom_sam_composer.git
+    git clone https://github.com/takao2704/soracom_sam_composer.git
     ```
 
 2. Open Google Chrome and go to `chrome://extensions`.
